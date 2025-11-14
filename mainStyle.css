@@ -1,0 +1,430 @@
+
+/* === Global Style === */
+body {
+  background-color: whitesmoke;
+  color: #001B3A;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  font-size: 18px; 
+  line-height: 1.6;    
+}
+
+h1, h2, h3 {
+  font-weight: bold;
+  margin: 10px 0;
+  filter:drop-shadow(0 4px 6px rgba(0,0,0,0.2));
+}
+
+header h1 {
+  font-size: 3em;
+}
+
+header p{
+  font-size: 1em;
+}
+
+h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+#bio h2, #achievements h2 {
+  font-size: 32px;
+}
+
+hr {
+  border: none;
+  height: 2px;
+  background-color: #001B3A;
+  width: 100%;
+}
+
+/* === Header === */
+header {
+  width: 100%;
+  background-color: #001B3A;
+  color: white;
+  text-align: center;
+  padding: 1em;
+  box-sizing: border-box; 
+}
+
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  margin: 0;
+}
+
+nav a:hover{
+  transition: all 0.5s ease-in-out;
+  color: #fff700;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+
+/* === Sections General === */
+section{
+ background: white;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+}
+
+section p, section ul {
+  font-size: inherit; /* inherits 18px from body */
+}
+
+section, aside, .form-container {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+aside{
+ background: whitesmoke;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+/* === Profile Picture === */
+
+.profile-pic{
+  text-align: center;
+}
+.profile-pic img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  transition: all 0.8s ease-in-out;
+}
+
+.profile-pic img:hover{
+    transform: scale(1.1) translateY(5px);
+    opacity:1;
+}
+
+
+/* === Achievement Style=== */
+#achievements summary {
+  font-size: 18px;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+details {
+  margin-top: 10px;
+}
+
+summary {
+  list-style: none;
+  -webkit-appearance: none; 
+  cursor: pointer;
+  font-weight: bold;
+  position: relative;
+  padding-left: 25px;
+}
+
+summary::before {
+  content: "▶";   
+  position: absolute;
+  left: 0;
+  top: 0px;
+  font-size: 18px;
+  transition: transform 0.3s ease;
+}
+
+
+details[open] summary::before {
+  transform: rotate(90deg);
+  color: #0066cc;
+  transition: 0.3s;
+}
+
+/* === Form Style=== */
+.form-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 40px;
+  margin-top: 20px;
+  text-align: left;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+input {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box; 
+}
+
+input:focus {
+  border-color: #000000;
+  outline: none;
+}
+
+input:required {
+  border-left: 3px solid #e74c3c;
+}
+
+input[type="color"] {
+  width: 100px;
+  height: 50px;  
+  padding: 0;    
+  border: 1px solid #ccc;
+  border-radius: 2px;
+  cursor: pointer;
+  vertical-align: middle;
+}
+
+input[type="email"],input[type="tel"],input[type="date"]{
+  width: 100%;
+  max-width: 300px;
+  height: 50px; 
+}
+
+label {
+  display: flex;
+  align-items: center;
+  gap: 10px; 
+  flex-wrap: wrap; 
+}
+
+button {
+  width: 150px;  
+  height: 40px;
+  background: #001B3A;
+  color: white;
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
+  transition: background-color 0.5s ease;
+}
+
+button:hover {
+  background: #004d99;
+}
+
+
+/* === Layout Grid === */
+.layout {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 20px;
+  padding: 20px;
+}
+
+
+/* === Footer === */
+footer {
+  align-items: center;
+  background-color: #001B3A;
+  color: white;
+  padding: 20px;
+}
+
+.footer-content{
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  align-items: center;
+  gap: 40px;
+}
+
+.footer-info{
+  text-align: center;
+}
+
+footer nav {
+  gap: 10px;
+  margin: 10px 0;
+}
+
+footer nav a img {
+  width: 30px;         
+  height: 30px;
+  transition: transform 0.3s, filter 0.3s;
+}
+
+footer nav a img:hover {
+  transform: scale(1.2) rotate(10deg); 
+  filter: brightness(1.2); 
+}
+
+.map {
+  text-align: center;
+  max-width: 500px;
+
+}
+.map h3{
+  margin-bottom: 10px;
+  color: #001B3A;
+}
+.map iframe {
+  width: 100%;
+  height: 200px;
+  border: 0;
+}
+
+#achieve::before{
+  content:"🏆"
+}
+#hobby::before{
+  content: "🩷";
+}
+
+#contactform::before{
+  content:"📞"
+}
+
+#reading:hover::after{
+  content:"📖" ;
+  transition: all 0.3s ease;
+}
+
+#coding:hover::after{
+  content: "👩🏻‍💻";
+  transition: all 0.3s ease;
+}
+
+#music:hover::after{
+  content: "🎶";
+  transition: all 0.3s ease;
+}
+
+#movies:hover::after{
+  content: "🍿🎬";
+  transition: all 0.3s ease;
+}
+
+#workingout:hover::after{
+  content: "🏋🏻‍♀️";
+  transition: all 0.3s ease;
+}
+
+/* Life Recently Hover Cards */
+#life-recently h2 {
+  color: #001B3A;
+  font-size: 32px;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.card-scroll {
+  display: flex;
+  overflow-x: auto;
+  gap: 15px;
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background: white;
+  scroll-behavior: smooth;
+}
+
+.photo-card {
+  position: relative;
+  flex:0 1 auto;
+  width: 150px;
+  height: 300px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.photo-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.6s ease;
+}
+
+.photo-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 25px rgba(0,0,0,0.2);
+}
+
+.photo-card::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 27, 58, 0.3);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.photo-card:hover::after {
+  opacity: 1;
+}
+
+.card-caption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 27, 58, 0.6);
+  color: white;
+  text-align: center;
+  padding: 10px;
+  font-size: 16px;
+  opacity: 0;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  transform: translateY(20px);
+}
+
+.photo-card:hover .card-caption {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
+#projects nav a{
+  display: inline-block;
+  margin: 10px;
+  padding: 10px 15px;
+  color: #001B3A;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.5s ease;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  main {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  nav ul {
+    justify-self: center;
+    text-align: center;
+  }
+}
+
+
+@media print{
+  nav,footer{
+    display: none;
+  }
+
+  body{
+    font-size: 12pt;
+    color:black;
+  }
+}

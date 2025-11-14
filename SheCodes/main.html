@@ -1,0 +1,45 @@
+<!--
+Name: Racy Ledres
+CYS: BSIS 3A
+Laboratory 8 - Web Development Quiz Application
+Date: November 8, 2025
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <!--This is the title of the web page displayed in the browser tab-->
+  <title>SheCodes</title>
+
+<!-- Links an external  CSS file for styling the webpage-->
+  <link rel="stylesheet" href="stylesheet.css"> 
+</head>
+<body>
+  <!--Logo Section-->
+  <div class="logo">
+    SheCodes
+  </div>
+
+  <!-- Main container for the quiz application. this is the white part sa html page-->
+  <div class="app">
+    <h1>Web Development General Quiz</h1>
+    <div class="quiz"> <!-- This container holds the question and answers -->
+      <h2 id="question">Question goes here</h2> <!-- Placeholder for displaying current questions-->
+      <div id="answer-buttons"> <!-- Container for answer buttons-->
+        <!-- Each button represents the possible answer choice-->
+        <button class="btn">Answer 1</button>
+        <button class="btn">Answer 2</button>
+        <button class="btn">Answer 3</button>
+        <button class="btn">Answer 4</button>
+      </div>
+      <!--This is the button to move to the next question after answering-->
+      <button id="next-btn">Next</button>
+    </div>
+  </div>
+    <!--This is the background container. The gridline pattern background -->
+   <div class="bgcontainer"></div>
+   <script src="quizscript.js"></script>
+</body>
+</html>

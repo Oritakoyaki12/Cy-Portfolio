@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>
+    My Profile
+  </title>
+   <link rel="stylesheet" href="mainStyle.css">
+</head>
+
+<body>
+
+<header>
+    <h1>Racy Ledres</h1>
+    <p id="subheader">Information Student at Technological University of the Philippines- Manila</p>
+  <hr>
+    <nav>
+      <ul>
+      <li><a href="#bio"> Bio</a></li>
+      <li><a href="#hobbies"> Hobbies</a></li>
+      <li><a href="#contact"> Contact</a></li> 
+       <li><a href="#projects"> Projects</a></li> 
+      </ul>
+    </nav>
+</header>
+
+ <main class="layout">
+    <!-- Bio Section -->
+    <section id ="bio">
+    <h2>Bio</h2>
+    <article>
+      <p>
+        I am a dedicated Information Systems student at the Technological 
+        University of the Philippines – Manila, passionate about technology,
+        problem-solving, and continuous learning. I enjoy exploring the latest
+          in software development, data management, and digital innovations. Outside
+          of academics, I love reading, coding personal projects, listening to music,
+            and staying active through sports and fitness. I strive to combine creativity
+            and technical skills to build meaningful solutions that can make a difference.</p>
+    </article>
+    </section>
+
+        <!-- Responsive Picture -->
+    <section class="profile-pic">
+      <picture >
+        <source srcset="images/Racy_small.png" media="(max-width: 600px)">
+        <source srcset="images/Racy_medium.png" media="(max-width: 1200px)">
+        <img src="images/Racy_large.png" alt="my profile">
+        </picture>
+      </section>
+
+  <!-- Achievement Section -->
+    <section id="achievements">
+      <h2 id="achieve">Achievements</h2>
+      <details>
+        <summary><b>View My Certifications</b></summary>
+        <ul>
+          <li>Datacamp - Intro to SQL Certificate of Completion</li>
+          <li>Virtual Assistant Internship Certificate of Completion</li>
+          <li>Virtual Assistant Training Certificate of Completion</li>
+        </ul>
+      </details>
+
+      <details>
+        <summary><b>View Organizations</b></summary>
+        <ul>
+          <li>Human Resources Officer - Google Developers Group on Campus TUP Manila</li>
+          <li>HR Communications Lead - GDGoC TUP Manila | 2024-2025</li>
+          <li>Logistics Committee Member - TUP Manila | 2024-2025</li>
+        </ul>
+      </details>
+    </section>
+
+    <!-- Hobbies Section -->
+    <section id="hobbies">
+      <h2 id="hobby">Hobbies</h2>
+      <article>
+          <ul id="hobbies">
+            <li id="reading">Reading</li>
+            <li id="coding">Coding</li>
+            <li id="music">Music</li>
+            <li id="movies">Movies</li>
+            <li id="workingout">Working out</li>
+          </ul>
+      </article>
+    </section>
+
+        <!-- Life Recently Section -->
+
+    <section id="life-recently">
+      <h2>Life Recently</h2>
+
+    <div class="card-scroll">
+      <div class="photo-card">
+      <img src="images/boracay.JPG" alt="Boracay">
+    <div class="card-caption">Boracay Trip</div>
+     </div>
+
+    <div class="photo-card">
+      <img src="images/aftergame.JPG" alt="After Game">
+      <div class="card-caption">After Game</div>
+    </div>
+
+    <div class="photo-card">
+      <img src="images/gympic.JPG" alt="Gym">
+      <div class="card-caption">Workout Vibes</div>
+    </div>
+
+    <div class="photo-card">
+      <img src="images/gdgphotoshoot.JPG" alt="Photoshoot">
+      <div class="card-caption">Photoshoot Day</div>
+    </div>
+    </div>
+    </section>
+
+
+     <!-- Contact Form Section -->
+  <section id="contact-form">
+    <h2 id="contactform">Contact Form</h2>
+    <hr>
+
+      <div class="form-container">
+        <form>
+          <p><i>If you’d like to connect or schedule a meeting with me, please fill out the form below:</i></p>
+
+          <label><b>Your Email:</b>
+          <input type="email" name="email" placeholder="Enter your email" required>
+          </label>
+
+          <label><b>Phone Number:</b>
+          <input type="tel" name="phone" placeholder="0912-345-6789" pattern="[0-9]{4}-[0-9]{3}-[0-9]{4}" required>
+          </label>
+
+          <label><b>Preferred Meeting Date:</b>
+          <input type="date" name="date" required>
+          </label>
+
+          <label><b>Your Favorite Color:
+          <input type="color" name="color">
+          </label>
+
+          <button type="submit">Send</button>
+        </form>
+      </div>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <hr>
+          <nav id="projects">
+            <ul>
+              <li><a href="SheCodes/main.html">SheCodes</a></li>
+              <li><a href="https://www.figma.com/proto/lfcUb3boXxBATy9b6X60Go/AppDev-Group-Activity?page-id=97%3A266&node-id=694-609&p=f&viewport=221%2C66%2C0.11&t=y1Eff2f0W6Jywb1H-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=97%3A269&show-proto-sidebar=1">BaggyCo</a></li>
+          </nav>
+    </section>
+          
+
+
+      </main>
+
+
+
+ <footer>
+  <div class="footer-content">
+
+    <div class="footer-info">
+      <h2> Contacts</h2>
+      <p>You can reach me through the following platforms:</p>
+      <nav> 
+          <a href="https://web.facebook.com/cyy.led"> <img src="images/fb.png" alt="facebook"></a>
+          <a href="www.linkedin.com/in/racy-ledres"> <img src="images/linkedin.jpg" alt="Linkedin"></a>
+          <a href="mailto:racyjhanna23@gmail.com"><img src="images/gmail.png" alt="Gmail"></a>
+      </nav>
+    <p>&copy; 2025 My Profile</p>
+     </div>
+
+    <aside class="map">
+      <h3>Where I Study!</h3>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1976939.7662019914!2d119.86388133124997!3d14.587078999999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397ca21ac302015%3A0x92dcca0f915010d9!2sTechnological%20University%20of%20the%20Philippines%20(TUP)%20-%20Manila!5e0!3m2!1sen!2sph!4v1758206388826!5m2!1sen!2sph"
+        allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+    </aside>
+
+    </div>
+ </footer>
+
+
+</body>
+</html>
